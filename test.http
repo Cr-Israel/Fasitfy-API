@@ -1,0 +1,24 @@
+### POST A HERO
+POST http://localhost:3000/heroes HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Hulk"
+}
+
+### GET ALL HEROES
+GET http://localhost:3000/heroes HTTP/1.1
+
+### GET A SINGLE HERO BY ID
+GET http://localhost:3000/heroes/139d4f91-6edf-42a1-9541-4486b968d321 HTTP/1.1
+
+### UPDATE A HERO BY ID
+PUT http://localhost:3000/heroes/update/139d4f91-6edf-42a1-9541-4486b968d321 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Israel"
+}
+
+### DELETE A HERO
+DELETE http://localhost:3000/heroes/delete/139d4f91-6edf-42a1-9541-4486b968d321 HTTP/1.1
