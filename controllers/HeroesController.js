@@ -27,6 +27,10 @@ const getHeroById = (req, reply) => {
 
     hero = heroes.find((hero) => hero.id == id);
 
+    if (!hero) {
+        return reply.code(400).send({ messsage: 'Hero não encontrado' });
+    }
+
     reply.send(hero);
 };
 
